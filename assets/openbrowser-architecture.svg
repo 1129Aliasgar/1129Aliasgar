@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#22D3EE" />
+    </linearGradient>
+    
+    <!-- Filters for Glow Effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="nodeGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: #09090B; }
+    .box { fill: #111217; stroke: #27272A; stroke-width: 1.5; rx: 12px; }
+    .box-highlight { fill: #18181B; stroke: #3B82F6; stroke-width: 2; rx: 12px; }
+    .title { font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #F5F5F5; }
+    .subtitle { font-family: 'Inter', Arial, sans-serif; font-size: 11px; fill: #A1A1AA; }
+    .label { font-family: 'Inter', Arial, sans-serif; font-size: 12px; fill: #E4E4E7; font-weight: 500; }
+    .arrow-bg { stroke: #27272A; stroke-width: 2; fill: none; }
+    
+    /* Animations */
+    .pulse-line {
+      stroke: url(#streamGrad);
+      stroke-width: 2.5;
+      stroke-dasharray: 8, 12;
+      fill: none;
+      animation: dash 30s linear infinite;
+    }
+    .pulse-reverse {
+      stroke: url(#streamGrad);
+      stroke-width: 2.5;
+      stroke-dasharray: 8, 12;
+      fill: none;
+      animation: dashReverse 30s linear infinite;
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -1000; }
+    }
+    @keyframes dashReverse {
+      to { stroke-dashoffset: 1000; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="960" height="400" rx="16" />
+  <rect x="1" y="1" width="958" height="398" rx="15" fill="none" stroke="#27272A" />
+
+  <!-- SECTION 1: LOCAL ENVIRONMENT -->
+  <text x="40" y="45" font-family="monospace" font-size="12" fill="#3B82F6" letter-spacing="1.5">01 // LOCAL WORKSPACE</text>
+  <rect x="40" y="65" width="280" height="290" class="box" />
+  
+  <!-- CLI Terminal -->
+  <g transform="translate(60, 95)">
+    <rect width="240" height="95" rx="8" fill="#040405" stroke="#27272A"/>
+    <circle cx="15" cy="15" r="4" fill="#EF4444" />
+    <circle cx="27" cy="15" r="4" fill="#F59E0B" />
+    <circle cx="39" cy="15" r="4" fill="#10B981" />
+    <text x="15" y="45" font-family="monospace" font-size="12" fill="#22D3EE">$ openbrowser dev</text>
+    <text x="15" y="65" font-family="monospace" font-size="11" fill="#71717A">&gt; Awaiting prompt...</text>
+    <text x="15" y="80" font-family="monospace" font-size="11" fill="#A1A1AA" opacity="0.8">1. User types in CLI</text>
+  </g>
+
+  <!-- SSE Server -->
+  <g transform="translate(60, 225)">
+    <rect width="240" height="100" class="box-highlight" filter="url(#nodeGlow)"/>
+    <text class="title" x="15" y="30">Fastify SSE Server</text>
+    <text class="subtitle" x="15" y="50">Localhost Event Stream</text>
+    <rect x="15" y="65" width="210" height="22" rx="4" fill="#1E1B4B" />
+    <text x="25" y="80" font-family="monospace" font-size="11" fill="#818CF8">Zod Schema Validation</text>
+  </g>
+
+  <!-- SECTION 2: BROWSER ENVIRONMENT -->
+  <text x="370" y="45" font-family="monospace" font-size="12" fill="#8B5CF6" letter-spacing="1.5">02 // CHROME RUNTIME</text>
+  <rect x="370" y="65" width="260" height="290" class="box" />
+
+  <!-- Extension MV3 -->
+  <g transform="translate(390, 140)">
+    <rect width="220" height="150" class="box-highlight" />
+    <text class="title" x="15" y="30">Chrome Extension (MV3)</text>
+    <text class="subtitle" x="15" y="50">Content Script Injector</text>
+    
+    <!-- Action boxes inside extension -->
+    <rect x="15" y="70" width="190" height="30" rx="6" fill="#18181B" stroke="#27272A" />
+    <text class="subtitle" x="25" y="88" fill="#E4E4E7">Code Diff Engine</text>
+    
+    <rect x="15" y="108" width="190" height="30" rx="6" fill="#18181B" stroke="#27272A" />
+    <text class="subtitle" x="25" y="126" fill="#22D3EE">Review: Accept / Reject</text>
+  </g>
+
+  <!-- SECTION 3: CLOUD AI PLATFORMS -->
+  <text x="680" y="45" font-family="monospace" font-size="12" fill="#22D3EE" letter-spacing="1.5">03 // CLOUD AI</text>
+  <rect x="680" y="65" width="240" height="290" class="box" />
+
+  <!-- LLM Context Container -->
+  <g transform="translate(700, 95)">
+    <rect width="200" height="230" rx="8" fill="#141419" stroke="#27272A" />
+    <text class="title" x="15" y="30">Target Interfaces</text>
+    
+    <!-- Target Chips -->
+    <rect x="15" y="55" width="170" height="30" rx="6" fill="#18181B" stroke="#27272A" />
+    <text font-family="sans-serif" font-size="12" font-weight="600" fill="#F5F5F5" x="30" y="74">ChatGPT</text>
+    
+    <rect x="15" y="95" width="170" height="30" rx="6" fill="#18181B" stroke="#27272A" />
+    <text font-family="sans-serif" font-size="12" font-weight="600" fill="#F5F5F5" x="30" y="114">DeepSeek</text>
+
+    <rect x="15" y="135" width="170" height="30" rx="6" fill="#18181B" stroke="#27272A" />
+    <text font-family="sans-serif" font-size="12" font-weight="600" fill="#F5F5F5" x="30" y="154">Gemini / Perplexity</text>
+    
+    <path d="M 25 195 L 175 195" stroke="#27272A" stroke-width="1" />
+    <text class="subtitle" x="15" y="215" fill="#10B981">🟢 Direct Script Injection</text>
+  </g>
+
+  <!-- FLOW PATHS & ANIMATIONS -->
+  <g>
+    <!-- Path 1: CLI -> SSE Server -->
+    <path d="M 180 190 L 180 225" class="arrow-bg" />
+    <path d="M 180 190 L 180 225" class="pulse-line" />
+    
+    <!-- Path 2: SSE Server -> Extension (Forward Event Link) -->
+    <path d="M 300 275 L 340 275 L 340 215 L 390 215" class="arrow-bg" />
+    <path d="M 300 275 L 340 275 L 340 215 L 390 215" class="pulse-line" />
+    <text class="subtitle" x="310" y="200" fill="#3B82F6">2. SSE Stream</text>
+
+    <!-- Path 3: Extension -> LLMs -->
+    <path d="M 610 180 L 700 180" class="arrow-bg" />
+    <path d="M 610 180 L 700 180" class="pulse-line" />
+    <text class="subtitle" x="620" y="170" fill="#8B5CF6">3. Inject</text>
+
+    <!-- Path 4: LLMs -> Extension (Response Engine) -->
+    <path d="M 700 240 L 610 240" class="arrow-bg" />
+    <path d="M 700 240 L 610 240" class="pulse-reverse" />
+    <text class="subtitle" x="622" y="260" fill="#22D3EE">4. Extract</text>
+
+    <!-- Path 5: Extension -> SSE -> CLI (Return Sync Loop) -->
+    <path d="M 390 245 L 355 245 L 355 305 L 300 305" class="arrow-bg" />
+    <path d="M 390 245 L 355 245 L 355 305 L 300 305" class="pulse-reverse" />
+    
+    <path d="M 140 225 L 140 190" class="arrow-bg" />
+    <path d="M 140 225 L 140 190" class="pulse-reverse" />
+    <text class="subtitle" x="70" y="210" fill="#E4E4E7">5. Diff Render</text>
+  </g>
+</svg>

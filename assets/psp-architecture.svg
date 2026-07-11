@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="100%" stop-color="#14B8A6" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <style>
+    .canvas { fill: #FFFFFF; }
+    .border-main { fill: none; stroke: #E2E8F0; stroke-width: 1; }
+    .block-client { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.5; rx: 8px; filter: url(#shadow); }
+    .block-core { fill: #FFFFFF; stroke: #2563EB; stroke-width: 2; rx: 10px; filter: url(#shadow); }
+    .block-db { fill: #F0FDF4; stroke: #16A34A; stroke-width: 1.5; rx: 6px; }
+    .block-gateway { fill: #FAFAFA; stroke: #D4D4D8; stroke-width: 1.5; rx: 8px; }
+    
+    .txt-title { font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #1E293B; }
+    .txt-subtitle { font-family: 'Inter', Arial, sans-serif; font-size: 11px; fill: #64748B; font-weight: 500; }
+    .txt-meta { font-family: 'monospace'; font-size: 11px; fill: #475569; }
+    .txt-header { font-family: 'Inter', Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #0F172A; letter-spacing: 1px; }
+
+    .line-flow { stroke: #64748B; stroke-width: 2; fill: none; stroke-dasharray: 6, 6; animation: flowMove 25s linear infinite; }
+    .line-callback { stroke: #0D9488; stroke-width: 2; fill: none; stroke-dasharray: 6, 6; animation: flowBack 20s linear infinite; }
+    
+    @keyframes flowMove { to { stroke-dashoffset: -500; } }
+    @keyframes flowBack { to { stroke-dashoffset: 500; } }
+  </style>
+
+  <!-- Canvas Base -->
+  <rect class="canvas" width="1100" height="520" rx="12" />
+  <rect class="border-main" x="1" y="1" width="1098" height="518" rx="11" />
+
+  <!-- HEADERS & TRACKS -->
+  <text class="txt-header" x="40" y="40" fill="#2563EB">EDGE LAYER</text>
+  <text class="txt-header" x="320" y="40" fill="#0F172A">PSP CORE ORCHESTRATION ENGINE</text>
+  <text class="txt-header" x="820" y="40" fill="#64748B">EXTERNAL NETWORK LAYER</text>
+  <path d="M 280 20 L 280 440" stroke="#F1F5F9" stroke-width="2" stroke-linecap="round" />
+  <path d="M 760 20 L 760 440" stroke="#F1F5F9" stroke-width="2" stroke-linecap="round" />
+
+  <!-- CLIENT NODE -->
+  <g transform="translate(40, 160)">
+    <rect width="200" height="130" class="block-client" />
+    <text class="txt-title" x="20" y="35">Merchant Platform</text>
+    <text class="txt-subtitle" x="20" y="55">Client Client SDK / E-Commerce</text>
+    <rect x="20" y="75" width="160" height="35" rx="4" fill="#EEF2F6" stroke="#E2E8F0" />
+    <text class="txt-meta" x="30" y="97">POST /v1/charges</text>
+  </g>
+
+  <!-- CORE PLATFORM NODES -->
+  <!-- API Gateway / Validation -->
+  <g transform="translate(320, 75)">
+    <rect width="180" height="70" class="block-client" />
+    <text class="txt-title" x="15" y="30">1. PSP API Endpoint</text>
+    <text class="txt-subtitle" x="15" y="50">Validation &amp; Auth Guard</text>
+  </g>
+
+  <!-- Mapping Engine Core -->
+  <g transform="translate(320, 185)">
+    <rect width="400" height="85" class="block-core" />
+    <text class="txt-title" x="20" y="30" fill="#2563EB">2. Gateway Mapping Engine (Core)</text>
+    <text class="txt-subtitle" x="20" y="50">Dynamic Signature Generator (HMAC/RSA) &amp; Object Marshalling</text>
+    <text class="txt-meta" x="20" y="68" fill="#2563EB">Transforms Native Schemas into Target Protocols</text>
+  </g>
+
+  <!-- Configuration Database -->
+  <g transform="translate(410, 310)">
+    <rect width="220" height="110" class="block-db" />
+    <text class="txt-title" x="15" y="25" fill="#16A34A">Gateway Config DB</text>
+    <text class="txt-subtitle" x="15" y="45">Mappings stored as config:</text>
+    <text font-family="monospace" font-size="10" fill="#15803D" x="15" y="65">• Auth / Method / Endpoints</text>
+    <text font-family="monospace" font-size="10" fill="#15803D" x="15" y="80">• Request/Response Mappings</text>
+    <text font-family="monospace" font-size="10" fill="#15803D" x="15" y="95">• Asynchronous Webhooks</text>
+  </g>
+
+  <!-- Request Builder & Output Formatter -->
+  <g transform="translate(540, 75)">
+    <rect width="180" height="70" class="block-client" />
+    <text class="txt-title" x="15" y="30">3. Target Adaptor</text>
+    <text class="txt-subtitle" x="15" y="50">Req Builder / Resp Mapper</text>
+  </g>
+
+  <!-- ASYNCHRONOUS WEBHOOK ENGINE -->
+  <g transform="translate(320, 445)">
+    <rect width="400" height="55" rx="6" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.5" />
+    <text font-family="sans-serif" font-size="12" font-weight="700" fill="#0F766E" x="20" y="25">Async Webhook &amp; Callback Broker</text>
+    <text class="txt-subtitle" x="20" y="42" fill="#115E59">Normalizes unstructured events to trigger global microservice hooks</text>
+  </g>
+
+  <!-- PAYMENT GATEWAYS (THE GRID) -->
+  <g transform="translate(820, 75)">
+    <rect width="240" height="270" class="block-gateway" />
+    <text class="txt-title" x="15" y="25">Abstracted Networks</text>
+    
+    <!-- Badges -->
+    <rect x="15" y="45" width="100" height="25" rx="4" fill="#FFFFFF" stroke="#E4E4E7" />
+    <text class="txt-subtitle" x="25" y="61" font-weight="700" fill="#6366F1">Stripe</text>
+
+    <rect x="125" y="45" width="100" height="25" rx="4" fill="#FFFFFF" stroke="#E4E4E7" />
+    <text class="txt-subtitle" x="135" y="61" font-weight="700" fill="#3B82F6">PayAdmit</text>
+
+    <rect x="15" y="80" width="100" height="25" rx="4" fill="#FFFFFF" stroke="#E4E4E7" />
+    <text class="txt-subtitle" x="25" y="96" font-weight="700" fill="#F59E0B">YoYaPay</text>
+
+    <rect x="125" y="80" width="100" height="25" rx="4" fill="#FFFFFF" stroke="#E4E4E7" />
+    <text class="txt-subtitle" x="132" y="96" font-weight="600" font-size="9" fill="#000000">CDN Software</text>
+
+    <rect x="15" y="115" width="100" height="25" rx="4" fill="#FFFFFF" stroke="#E4E4E7" />
+    <text class="txt-subtitle" x="25" y="131" font-weight="700" fill="#E11D48">Lightning</text>
+
+    <rect x="125" y="115" width="100" height="25" rx="4" fill="#FFFFFF" stroke="#E4E4E7" />
+    <text class="txt-subtitle" x="135" y="131" font-weight="700" fill="#10B981">Future GW</text>
+    
+    <path d="M 15 160 L 225 160" stroke="#E4E4E7" stroke-width="1" />
+    <rect x="15" y="175" width="210" height="80" rx="4" fill="#F4F4F5" />
+    <text class="txt-subtitle" x="25" y="195" fill="#27272A">Network State Engine:</text>
+    <text font-family="monospace" font-size="10" fill="#71717A" x="25" y="215">HTTP/1.1 / JSON / Form</text>
+    <text font-family="monospace" font-size="10" fill="#71717A" x="25" y="235">TLS 1.3 Secure Channels</text>
+  </g>
+
+  <!-- CONNECTION PATHWAYS & PIPELINES -->
+  <g>
+    <!-- Merchant App <-> API Endpoint -->
+    <path d="M 240 200 L 270 200 L 270 110 L 320 110" class="line-flow" />
+    <path d="M 320 130 L 270 130 L 270 250 L 240 250" class="line-flow" style="animation-direction: reverse; stroke: #3B82F6;" />
+    
+    <!-- API Endpoint -> Mapping Engine -->
+    <path d="M 410 145 L 410 185" stroke="#475569" stroke-width="2" fill="none" />
+    
+    <!-- Mapping Engine <-> Config Database -->
+    <path d="M 460 270 L 460 310" stroke="#16A34A" stroke-width="2" stroke-dasharray="4,4" fill="none" />
+    <path d="M 600 310 L 600 270" stroke="#16A34A" stroke-width="2" stroke-dasharray="4,4" fill="none" />
+    
+    <!-- Mapping Engine -> Adaptor Output -->
+    <path d="M 630 185 L 630 145" stroke="#475569" stroke-width="2" fill="none" />
+    
+    <!-- Adaptor Output <-> Networks Grid -->
+    <path d="M 720 110 L 820 110" class="line-flow" />
+    <path d="M 820 130 L 720 130" class="line-flow" style="animation-direction: reverse; stroke: #3B82F6;" />
+    
+    <!-- Networks -> Webhook Engine -> External Microservices -->
+    <path d="M 940 345 L 940 475 L 720 475" class="line-callback" />
+    <path d="M 320 475 L 140 475 L 140 290" class="line-callback" />
+  </g>
+
+  <!-- ARCHITECTURE FOOTER DECLARATION -->
+  <rect x="0" y="495" width="1100" height="25" fill="#F8FAFC" rx="4" />
+  <text font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#475569" x="20" y="512">
+    💡 Architecture Paradigm: New payment gateways are integrated through database configuration records only—no backend business logic changes are required.
+  </text>
+</svg>
