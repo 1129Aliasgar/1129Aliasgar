@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">Aliasgar Imdad Bootwala developer profile</title>
+  <desc id="desc">A dark developer dashboard showing role, focus, status, availability, location and coding experience.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop stop-color="#3B82F6"><animate attributeName="stop-color" values="#3B82F6;#8B5CF6;#3B82F6" dur="9s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <clipPath id="avatar-clip">
+      <circle cx="705" cy="46" r="23"/>
+    </clipPath>
+    <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="460" rx="18" fill="#09090B"/>
+  <rect x="1" y="1" width="1198" height="458" rx="17" fill="#111217" stroke="#27272A"/>
+  <path d="M0 91H1200M0 330H1200M752 91V460" stroke="#27272A"/>
+
+  <circle cx="34" cy="45" r="5" fill="#3B82F6" filter="url(#glow)"/>
+  <text x="52" y="50" fill="#A1A1AA" font-family="Inter,Arial,sans-serif" font-size="14" letter-spacing="2">PROFILE / 2026</text>
+
+  <!-- Resolved Absolute Image Source -->
+  <g clip-path="url(#avatar-clip)">
+    <rect x="682" y="23" width="46" height="46" fill="#18181B"/>
+    <image x="682" y="23" width="46" height="46" href="https://github.com/1129Aliasgar.png"/>
+  </g>
+  <circle cx="705" cy="46" r="23" fill="none" stroke="#27272A" stroke-width="2"/>
+
+  <text x="1135" y="50" fill="#A1A1AA" font-family="monospace" font-size="13" text-anchor="end">OPEN TO WORK</text>
+
+  <text x="48" y="156" fill="#F5F5F5" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="700">Aliasgar Imdad Bootwala</text>
+  <text x="48" y="194" fill="#A1A1AA" font-family="Inter,Arial,sans-serif" font-size="19">Software Engineer · Backend Systems · AI</text>
+
+  <rect x="48" y="231" width="258" height="35" rx="8" fill="#18181B" stroke="#27272A"/>
+  <text x="64" y="254" fill="#22D3EE" font-family="monospace" font-size="14">$ build reliable systems</text>
+  <rect x="279" y="242" width="8" height="16" fill="#22D3EE"><animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/></rect>
+
+  <text x="48" y="304" fill="#A1A1AA" font-family="Inter,Arial,sans-serif" font-size="13" letter-spacing="1.4">CURRENT FOCUS</text>
+  <text x="48" y="353" fill="#F5F5F5" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="600">Payments, event-driven systems &amp; developer tools</text>
+
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="800" y="130" fill="#A1A1AA" font-size="12" letter-spacing="1.4">STATUS</text>
+    <circle cx="808" cy="164" r="5" fill="#22D3EE"><animate attributeName="opacity" values="1;.45;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <text x="824" y="169" fill="#F5F5F5" font-size="17">Available</text>
+    <text x="992" y="130" fill="#A1A1AA" font-size="12" letter-spacing="1.4">AVAILABILITY</text>
+    <text x="992" y="169" fill="#F5F5F5" font-size="17">Open to collaborate</text>
+    <text x="800" y="229" fill="#A1A1AA" font-size="12" letter-spacing="1.4">LOCATION</text>
+    <text x="800" y="267" fill="#F5F5F5" font-size="17">India · IST</text>
+    <text x="992" y="229" fill="#A1A1AA" font-size="12" letter-spacing="1.4">EXPERIENCE</text>
+    <text x="992" y="267" fill="#F5F5F5" font-size="17">2+ years</text>
+  </g>
+
+  <rect x="800" y="352" width="352" height="5" rx="3" fill="#27272A"/>
+  <rect x="800" y="352" width="245" height="5" rx="3" fill="url(#g)"><animate attributeName="width" values="175;245;175" dur="7s" repeatCount="indefinite"/></rect>
+  <text x="800" y="390" fill="#A1A1AA" font-family="monospace" font-size="12">SYSTEMS / OPEN SOURCE / LINUX</text>
+</svg>

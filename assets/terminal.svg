@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="Developer console">
+  <rect width="1200" height="380" rx="15" fill="#111217" stroke="#27272A"/>
+  <path d="M0 55H1200" stroke="#27272A"/>
+  <circle cx="31" cy="28" r="6" fill="#3B82F6"/>
+  <circle cx="52" cy="28" r="6" fill="#8B5CF6"/>
+  <circle cx="73" cy="28" r="6" fill="#22D3EE"/>
+  <text x="600" y="33" text-anchor="middle" fill="#A1A1AA" font-family="monospace" font-size="13">developer-console</text>
+  
+  <g font-family="'JetBrains Mono',monospace" font-size="16">
+    <text x="38" y="97" fill="#3B82F6">$</text>
+    <text x="63" y="97" fill="#F5F5F5">whoami</text>
+    <text x="63" y="128" fill="#A1A1AA">aliasgar — backend engineer / systems builder</text>
+    
+    <text x="38" y="177" fill="#3B82F6">$</text>
+    <text x="63" y="177" fill="#F5F5F5">tech</text>
+    <text x="63" y="208" fill="#A1A1AA">node.js  python  kafka  redis  mongodb  postgres</text>
+    
+    <text x="38" y="257" fill="#3B82F6">$</text>
+    <text x="63" y="257" fill="#F5F5F5">current_focus</text>
+    <text x="63" y="288" fill="#A1A1AA">event-driven payments · AI workflows · clean architecture</text>
+    
+    <text x="38" y="337" fill="#3B82F6">$</text>
+    <text x="63" y="337" fill="#F5F5F5">contact</text>
+    
+    <!-- CSP-Safe Text Animation Segment Layout Matrix -->
+    <g fill="#22D3EE">
+      <text x="145" y="337">a<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.05;0.95;1" repeatCount="indefinite"/></text>
+      <text x="155" y="337">l<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.08;0.95;1" repeatCount="indefinite"/></text>
+      <text x="165" y="337">i<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.11;0.95;1" repeatCount="indefinite"/></text>
+      <text x="175" y="337">a<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.14;0.95;1" repeatCount="indefinite"/></text>
+      <text x="185" y="337">s<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.17;0.95;1" repeatCount="indefinite"/></text>
+      <text x="195" y="337">g<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.20;0.95;1" repeatCount="indefinite"/></text>
+      <text x="205" y="337">a<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.23;0.95;1" repeatCount="indefinite"/></text>
+      <text x="215" y="337">r<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.26;0.95;1" repeatCount="indefinite"/></text>
+      <text x="225" y="337">b<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.29;0.95;1" repeatCount="indefinite"/></text>
+      <text x="235" y="337">o<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.32;0.95;1" repeatCount="indefinite"/></text>
+      <text x="245" y="337">o<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.35;0.95;1" repeatCount="indefinite"/></text>
+      <text x="255" y="337">t<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.38;0.95;1" repeatCount="indefinite"/></text>
+      <text x="265" y="337">w<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.41;0.95;1" repeatCount="indefinite"/></text>
+      <text x="275" y="337">a<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.44;0.95;1" repeatCount="indefinite"/></text>
+      <text x="285" y="337">l<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.47;0.95;1" repeatCount="indefinite"/></text>
+      <text x="295" y="337">a<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.50;0.95;1" repeatCount="indefinite"/></text>
+      <text x="305" y="337">3<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.53;0.95;1" repeatCount="indefinite"/></text>
+      <text x="315" y="337">@<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.56;0.95;1" repeatCount="indefinite"/></text>
+      <text x="325" y="337">g<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.59;0.95;1" repeatCount="indefinite"/></text>
+      <text x="335" y="337">m<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.62;0.95;1" repeatCount="indefinite"/></text>
+      <text x="345" y="337">a<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.65;0.95;1" repeatCount="indefinite"/></text>
+      <text x="355" y="337">i<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.68;0.95;1" repeatCount="indefinite"/></text>
+      <text x="365" y="337">l<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.71;0.95;1" repeatCount="indefinite"/></text>
+      <text x="375" y="337">.<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.74;0.95;1" repeatCount="indefinite"/></text>
+      <text x="385" y="337">c<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.77;0.95;1" repeatCount="indefinite"/></text>
+      <text x="395" y="337">o<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.80;0.95;1" repeatCount="indefinite"/></text>
+      <text x="405" y="337">m<animate attributeName="opacity" values="0;1;1;0" dur="5s" keyTimes="0;0.83;0.95;1" repeatCount="indefinite"/></text>
+    </g>
+
+    <!-- Synchronized Live Trailing Cursor Block -->
+    <rect y="322" width="9" height="20" fill="#22D3EE">
+      <animate attributeName="x" values="145;145;155;165;175;185;195;205;215;225;235;245;255;265;275;285;295;305;315;325;335;345;355;365;375;385;395;405;415;415;145" dur="5s" keyTimes="0;0.02;0.05;0.08;0.11;0.14;0.17;0.20;0.23;0.29;0.32;0.35;0.38;0.41;0.44;0.47;0.50;0.53;0.56;0.59;0.62;0.65;0.68;0.71;0.74;0.77;0.80;0.83;0.86;0.95;1" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
