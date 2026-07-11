@@ -85,8 +85,7 @@ Local-first event-driven bridge running communication pipelines over Server-Sent
 
 | Project & Role | Stack & Progress Tracker |
 | :--- | :--- |
-| **OpenBrowser**<br/>
-Local-first AI coding assistant | <code>████████░░</code> **80%** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>Chrome MV3 · Fastify · SSE · Zod · LLM agents · ETA: iterative public releases |
+| **OpenBrowser**<br/>Local-first AI coding assistant | `████████░░` **80%**<br/>`Chrome MV3` `Fastify` `SSE` `Zod` `LLM Agents`<br/>*ETA: Iterative public releases* |
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
