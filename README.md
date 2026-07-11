@@ -65,13 +65,9 @@ Experienced in shipping systems with Node.js, Kafka, Redis, MongoDB, and LLM wor
 
 ## Now Building
 
-<p width="100%">
-  <strong>OpenBrowser Agent</strong> — <sub>Local-first AI coding assistant</sub>
-  <br />
-  <code>████████░░</code> <strong>80%</strong>
-  <br />
-  <sub>Chrome MV3 · Fastify · SSE · Zod · LLM agents · <strong>ETA: iterative public releases</strong></sub>
-</p>
+| Project & Role | Stack & Progress Tracker |
+| :--- | :--- |
+| **OpenBrowser**<br/><sub>Local-first AI coding assistant</sub> | <code>████████░░</code> **80%**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><sub>Chrome MV3 · Fastify · SSE · Zod · LLM agents · ETA: iterative public releases</sub> |
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
