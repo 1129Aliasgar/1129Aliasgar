@@ -65,18 +65,20 @@ Experienced in shipping systems with Node.js, Kafka, Redis, MongoDB, and LLM wor
 
 ## Now Building
 
-<table width="100%" style="border-collapse: collapse; width: 100%;">
-  <tr style="border: none;">
-    <td width="30%" style="border: none; padding: 10px 0; vertical-align: top;">
+<div width="100%">
+<table width="100%" style="width: 100%; min-width: 100%; border-collapse: collapse; border-style: hidden;">
+  <tr style="border: none; background: transparent;">
+    <td width="30%" style="border: none; padding: 12px 0; vertical-align: top; background: transparent;">
       <strong>OpenBrowser Agent</strong><br/>
       <sub>Local-first AI coding assistant</sub>
     </td>
-    <td width="70%" style="border: none; padding: 10px 0; vertical-align: top;">
+    <td width="70%" style="border: none; padding: 12px 0; vertical-align: top; background: transparent;">
       <code>████████░░</code> <strong>80%</strong><br/>
       <sub>Chrome MV3 · Fastify · SSE · Zod · LLM agents<br/>ETA: iterative public releases</sub>
     </td>
   </tr>
 </table>
+</div>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
