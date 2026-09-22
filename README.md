@@ -109,7 +109,7 @@ Local-first event-driven bridge running communication pipelines over Server-Sent
 
 <img src="./assets/timeline.svg" width="100%" alt="Experience timeline showing Hatim Technologies from June 2024 to July 2026" />
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<!-- <img src="./assets/divider.svg" width="100%" alt="" /> -->
 
 <p align="center">
   <a href="https://github.com/1129Aliasgar">GitHub</a>
