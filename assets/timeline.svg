@@ -1,1 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="216" viewBox="0 0 1200 216" role="img" aria-label="Professional experience timeline"><rect width="1200" height="216" rx="14" fill="#111217" stroke="#27272A"/><path d="M105 108H1095" stroke="#27272A" stroke-width="2"/><path d="M105 108H610" stroke="#3B82F6" stroke-width="2"><animate attributeName="d" values="M105 108H410;M105 108H610;M105 108H410" dur="6s" repeatCount="indefinite"/></path><g font-family="Inter,Arial,sans-serif"><circle cx="105" cy="108" r="9" fill="#09090B" stroke="#A1A1AA" stroke-width="2"/><text x="105" y="63" text-anchor="middle" fill="#A1A1AA" font-size="13">2024</text><text x="105" y="152" text-anchor="middle" fill="#F5F5F5" font-size="16" font-weight="600">Foundation</text><text x="105" y="176" text-anchor="middle" fill="#A1A1AA" font-size="13">Backend &amp; product work</text><circle cx="610" cy="108" r="11" fill="#22D3EE"><animate attributeName="r" values="9;12;9" dur="2.2s" repeatCount="indefinite"/></circle><text x="610" y="63" text-anchor="middle" fill="#22D3EE" font-size="13">JUN 2024 — JUL 2026</text><text x="610" y="152" text-anchor="middle" fill="#F5F5F5" font-size="16" font-weight="600">Hatim Technologies</text><text x="610" y="176" text-anchor="middle" fill="#A1A1AA" font-size="13">Software Engineer · 2+ years</text><circle cx="1095" cy="108" r="9" fill="#09090B" stroke="#8B5CF6" stroke-width="2"/><text x="1095" y="63" text-anchor="middle" fill="#A1A1AA" font-size="13">NEXT</text><text x="1095" y="152" text-anchor="middle" fill="#F5F5F5" font-size="16" font-weight="600">Open Source</text><text x="1095" y="176" text-anchor="middle" fill="#A1A1AA" font-size="13">Developer tooling</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="216" viewBox="0 0 1200 216" role="img" aria-label="Professional experience timeline">
+  <rect width="1200" height="216" rx="14" fill="#111217" stroke="#27272A"/>
+
+  <path d="M105 108H1095" stroke="#27272A" stroke-width="2"/>
+
+  <path d="M105 108H610" stroke="#3B82F6" stroke-width="2">
+    <animate
+      attributeName="d"
+      values="M105 108H410;M105 108H610;M105 108H410"
+      dur="6s"
+      repeatCount="indefinite"/>
+  </path>
+
+  <g font-family="Inter,Arial,sans-serif">
+
+    <!-- 2024 -->
+    <circle
+      cx="105"
+      cy="108"
+      r="9"
+      fill="#09090B"
+      stroke="#A1A1AA"
+      stroke-width="2"/>
+
+    <text
+      x="105"
+      y="63"
+      text-anchor="middle"
+      fill="#A1A1AA"
+      font-size="13">
+      2024
+    </text>
+
+    <text
+      x="105"
+      y="152"
+      text-anchor="middle"
+      fill="#F5F5F5"
+      font-size="16"
+      font-weight="600">
+      Foundation
+    </text>
+
+    <text
+      x="105"
+      y="176"
+      text-anchor="middle"
+      fill="#A1A1AA"
+      font-size="13">
+      Backend &amp; product work
+    </text>
+
+
+    <!-- Hatim Technologies -->
+    <circle
+      cx="610"
+      cy="108"
+      r="11"
+      fill="#22D3EE">
+
+      <animate
+        attributeName="r"
+        values="9;12;9"
+        dur="2.2s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <text
+      x="610"
+      y="63"
+      text-anchor="middle"
+      fill="#22D3EE"
+      font-size="13">
+      JUN 2024 — JUL 2026
+    </text>
+
+    <text
+      x="610"
+      y="152"
+      text-anchor="middle"
+      fill="#F5F5F5"
+      font-size="16"
+      font-weight="600">
+      Hatim Technologies
+    </text>
+
+    <text
+      x="610"
+      y="176"
+      text-anchor="middle"
+      fill="#A1A1AA"
+      font-size="13">
+      Software Engineer · 2+ years
+    </text>
+
+
+    <!-- Next Opportunity -->
+    <circle
+      cx="1095"
+      cy="108"
+      r="9"
+      fill="#09090B"
+      stroke="#8B5CF6"
+      stroke-width="2"/>
+
+    <text
+      x="1095"
+      y="63"
+      text-anchor="middle"
+      fill="#A1A1AA"
+      font-size="13">
+      NEXT
+    </text>
+
+    <text
+      x="1095"
+      y="152"
+      text-anchor="middle"
+      fill="#F5F5F5"
+      font-size="16"
+      font-weight="600">
+      Open for Opportunity
+    </text>
+
+    <text
+      x="1095"
+      y="176"
+      text-anchor="middle"
+      fill="#A1A1AA"
+      font-size="13">
+      Software Engineer · New Opportunities
+    </text>
+
+  </g>
+</svg>
